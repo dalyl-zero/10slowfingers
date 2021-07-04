@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content-box">
+            <div id="words">
+                <div class="row">
+                    
+                </div>
+            </div>
+            <div class="input-row">
+                <input id="inputField" type="text" name="" autocomplete="off">
+            </div>
+            <div class="result-board">
+                <div class="wpm-value" id="wpm-value">27 WPM</div>
+                <div class="result-details">
+                    <div class="row">
+                        <div class="col">Keystrokes</div>
+                        <div class="col" id='keystrokes'>0</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Accuracy</div>
+                        <div class="col" id='accuracy'>98%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Correct words</div>
+                        <div class="col" id='nbCorrectWords'>25</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Wrong words</div>
+                        <div class="col" id='nbWrongWords'>3</div>
+                    </div>
+                </div>
+            </div>
+            <button id="restartBtn"><i class='bx bx-refresh'></i></button>
+            <span id="timer" class="timer"></span>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script> 
+</body>
+</html>
